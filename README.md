@@ -4,7 +4,7 @@ This is our first college project on Web Development
 ----------------------------------------------------
 Members:
         1)Archit Suthar
-        2)Sanjay Dhoriya
+        2)Sanjay Dhoriya ( Project Head )
         3)Keval Mandalik
 ----------------------------------------------------       
 Topic : Restaurant Website
