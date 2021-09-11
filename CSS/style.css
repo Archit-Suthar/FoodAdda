@@ -5,4 +5,8 @@
 
 #logo{
     width: 70px;
+    border-radius: 10px;
+}
+.sign{
+    margin: 0px 10px;
 }
