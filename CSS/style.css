@@ -10,3 +10,7 @@
 .sign{
     margin: 0px 10px;
 }
+
+.container#blur.active{
+    filter: blur(20px);
+}
