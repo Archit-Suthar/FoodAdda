@@ -5,7 +5,10 @@
 body{
   background: url(../Images/background.jpg) fixed;
 }
-
+/* ------------------------------------------ navbar ------------------------------------------ */
+/* .navlink{
+  color: #ff8128;
+} */
 #logo{
     width: 60px;
     border-radius: 10px;
@@ -129,7 +132,7 @@ body{
   .signup_text{
       text-align: center;
   }
-  /**************MODAL{SIGN UP}**************/
+  /*MODAL{SIGN UP}*/
 
   /* Whatsapp Support */
  
@@ -152,9 +155,38 @@ z-index:100;
 margin-top:16px;
 }
 
-  /* Whatsapp Support */
+  /*------------------------------------ Whatsapp Support---------------------------------------- */
 
+  /* -------------------------------------carousel----------------------------------------------- */
   /* Carousel Container */
   #crlContainer{
     margin: 8px auto;
+  }
+
+  /*---------------------------------------- gallery----------------------------------------------- */
+  .gallery{
+    margin-top: 30px;
+  }
+  #ourFood span{
+    color: #ff8128;
+   text-align: center;
+   font-size: 50px;
+   display: block;
+   margin-bottom: 20px;
+  }
+  #ourRest span{
+    color: #ff8128;
+   text-align: center;
+   font-size: 50px;
+   display: block;
+   margin-top: 30px;
+   margin-bottom: 20px;
+  }
+  .box{
+    display: inline-block;
+    margin: 8px;
+  }
+  .box img{
+    width: 350px;
+    height: 260px;
   }

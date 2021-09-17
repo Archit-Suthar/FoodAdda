@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <style>
+        /**************MODAL {SIGN UP}**************/
+        .signup_dialog {
+            max-width: 60%;
+        }
+
+        /**************MODAL {SIGN IN}**************/
+        .signin_dialog {
+            max-width: 60%;
+        }
+    </style>
+    <title>NoName Restaurant</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <a class="navbar-brand" href="#"><img id="logo" src="../Images/logo.jpg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link text-warning" href="../index.html">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Gallery <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-warning" href="#">Offers <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-warning" href="#">About Us <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-warning" href="#">Contact Us<span class="sr-only"></span></a>
+                </li>
+
+            </ul>
+            <!-- Button trigger modal{SIGNIN} -->
+            <button type="button" class="btn btn-outline-warning sign" data-toggle="modal" data-target="#signin"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
+                    <path fill-rule="evenodd"
+                        d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                </svg>
+                Sign in
+            </button>
+
+            <!-- Modal{SIGNIN} -->
+            <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog signin_dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="signin_body">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="signin_img">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 offset-lg-1">
+                                        <div class="signin_content">
+
+                                            <h3>LOGIN</h3>
+                                            <hr>
+                                            <p>For unlimited food order with free delivery</p>
+                                            <form class="signin_form">
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                                        aria-describedby="emailHelp" placeholder="Email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="password" class="form-control"
+                                                        id="exampleInputPassword1" placeholder="Password">
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">Remember
+                                                        Me</label>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+
+                                                <p class="signup_text">Don't have Account?<a href="#">SignUp</a></p>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL{SIGN IN} -->
+            <!-- Button trigger modal{SIGNUP} -->
+            <button type="button" class="btn btn-outline-warning sign" data-toggle="modal" data-target="#signup"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                    <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                    <path fill-rule="evenodd"
+                        d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+                </svg>
+                Sign up
+            </button>
+
+            <!-- Modal{SIGNUP} -->
+            <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog signup_dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="signup_body">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="signup_img">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 offset-lg-1">
+                                        <div class="signup_content">
+
+                                            <h3>Create Account</h3>
+                                            <p>For unlimited food order with free delivery</p>
+                                            <form class="signup_form">
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                                        aria-describedby="emailHelp" placeholder="Email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="exampleInputFullname"
+                                                        placeholder="Full Name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="password" class="form-control"
+                                                        id="exampleInputPassword1" placeholder="Password">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="password" class="form-control"
+                                                        id="exampleInputConfirmPassword1"
+                                                        placeholder="Confirm Password">
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">I agree to the
+                                                        <a href="#">Term</a> and <a href="#">Privacy Policy</a></label>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+                                                <hr>
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <button class="btn btn-facebook btn-block"><img
+                                                                src="../Images/facebook.png" alt=""> Sign in
+                                                            With Facebook</button>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <button class="btn btn-google btn-block"><img
+                                                                src="../Images/google.png" alt=""> Sign in
+                                                            With Google</button>
+                                                    </div>
+                                                </div>
+                                                <p class="signup_text">already a member? <a href="#">Signin</a></p>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal{SIGN UP} -->
+        </div>
+    </nav>
+
+
+    <!------------------------------------------ gallery ---------------------------------- -->
+
+
+    <div class="container gallery">
+        <div id="ourFood">
+            <span>Our Food</span>
+            <div class="box">
+                <img src="../Images/img (1).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (2).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (3).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (4).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (5).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (6).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (7).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (8).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (9).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (10).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (11).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (12).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (13).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (14).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (15).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (16).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (17).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/Gallery1.jpeg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/Gallery2.jpeg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/Gallery3.jpeg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/Gallery4.jpeg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/Gallery5.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/Gallery6.jpeg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/gallery7.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (18).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (19).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (20).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (21).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (22).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (23).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (24).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (25).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (26).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (27).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (28).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (29).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (30).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (31).jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/img (11).jpg" alt="">
+            </div>
+
+
+
+
+        </div>
+
+        <div id="ourRest">
+            <span>Our Restaurants</span>
+            <div class="box">
+                <img src="../Images/Gallery8.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- ------------------------------------------------------------------------------------- -->
+    <!-- Carousel{End} -->
+    <!--Whatsapp Support-->
+    <a href="https://api.whatsapp.com/send?phone=919328681205&text=I Want to Order Food." class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+    <!--Whatsapp Support-->
+    <div class="container" style="height:1000px">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
