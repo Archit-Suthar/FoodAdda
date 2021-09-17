@@ -2,6 +2,9 @@
     margin : 0;
     padding : 0;
 }
+body{
+  background: url(../Images/background.jpg) fixed;
+}
 
 #logo{
     width: 60px;
@@ -150,3 +153,8 @@ margin-top:16px;
 }
 
   /* Whatsapp Support */
+
+  /* Carousel Container */
+  #crlContainer{
+    margin: 8px auto;
+  }
