@@ -14,6 +14,13 @@ body{
     width: 60px;
     border-radius: 10px;
 }
+/* hover effect navbar  */
+/* .nav-link :hover .nav-item{
+  border-bottom: 1px solid #ff8128;
+}
+ */
+
+
 /*****Sign in and Sign in buttone margin*****/
 
 .sign{
@@ -136,6 +143,8 @@ body{
   }
   /*MODAL{SIGN UP}*/
 
+  /*------------------------------------ Whatsapp Support---------------------------------------- */
+
   /* Whatsapp Support */
  
   .float{
@@ -156,8 +165,6 @@ z-index:100;
 .my-float{
 margin-top:16px;
 }
-
-  /*------------------------------------ Whatsapp Support---------------------------------------- */
 
   /* -------------------------------------carousel----------------------------------------------- */
   /* Carousel Container */
@@ -199,7 +206,7 @@ margin-top:16px;
     color: white;
     text-align: center;
   }
-  .welcome-carousel p{
+  .welcome-carousel h5{
 
     margin: 10px auto;
     display: block;
@@ -208,3 +215,13 @@ margin-top:16px;
   }
 
   /**************WELCOME CAROUSEL{END}**************/
+
+  /* ----------------------------------------order button ------------------------------------ */
+
+  #order{
+    margin: 30px auto;
+    display: block;
+    font-size: 30px;
+    padding: 6px 20px;
+    border-radius: 30px;
+  }
