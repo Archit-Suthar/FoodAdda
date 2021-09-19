@@ -4,12 +4,17 @@
     font-family: 'Baloo Bhai 2', cursive;
 }
 body{
-  background: url(../Images/background.jpg) fixed;
+  background: url(../Images/background.jpeg) fixed;
 }
 /* ------------------------------------------ NAVBAR ------------------------------------------ */
 /* .navlink{
   color: #ff8128;
 } */
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #f0f0f0;
+  transform:translateY(-3px)
+}
 #logo{
     width: 60px;
     border-radius: 10px;
