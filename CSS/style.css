@@ -230,3 +230,42 @@ margin-top:16px;
     padding: 6px 20px;
     border-radius: 30px;
   }
+
+  /**************Below Order Button{Start}**************/
+    .detail{
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      
+    }
+
+    .detail .minimul-order{
+      justify-content: center;
+      text-align: center;
+    }
+    .detail .minimul-order p{
+      display: block;
+      margin: 10px auto;
+      width: 70%;
+    }
+    .detail .live-tracking{
+      justify-content: center;
+      text-align: center;
+    }
+    .detail .live-tracking p{
+      display: block;
+      margin: 10px auto;
+      width: 70%;
+    }
+    .detail .fast-delivery{
+      justify-content: center;
+      text-align: center;
+    }
+    .detail .fast-delivery p{
+      display: block;
+      margin: 10px auto;
+      width: 70%;
+    }
+    
+  /**************Below Order Button{End}**************/
