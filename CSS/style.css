@@ -7,9 +7,6 @@ body{
   background: url(../Images/240725.jpg) fixed;
 }
 /* ------------------------------------------ NAVBAR ------------------------------------------ */
-/* .navlink{
-  color: #ff8128;
-} */
 
 .navbar-dark .navbar-nav .nav-link:hover {
   color: #f0f0f0;
