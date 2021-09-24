@@ -325,3 +325,41 @@ margin-top:16px;
     64%  { transform: scale(1,1)      translateY(0); }
     100% { transform: scale(1,1)      translateY(0); }
 }
+
+/* --------------------------------------------- footer ---------------------------------------- */
+.footer {
+  padding: 20px;
+  height: 350px;
+  position: sticky;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 18px Consolas;
+}
+.fLogo{
+  margin: 25px 100px;
+}
+.Social{
+  display: flex;
+  width: 300px;
+}
+.Social img{
+  width: 70px;
+}
+.Social a{
+  margin: auto;
+}
+.Social a:hover{
+  text-decoration: none;
+}
+.fLogoSocials{
+  display: inline-block;
+  border-right: 1px solid;
+}
+.fpart2{
+  display: inline-block;
+}
+.fpart2 li a{
+  font-size: 17px;
+  margin: 20px;
+}
+
