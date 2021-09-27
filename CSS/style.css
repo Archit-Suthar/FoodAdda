@@ -395,4 +395,215 @@ margin-top:16px;
 }
 
 /* --------------------------------------------- footer{END} ---------------------------------------- */
+/* --------------------------------------------- Contact Us{Start} ---------------------------------------- */
+
+
+.contactUs{
+  position: relative;
+  width: 100%;
+  padding: 0px 100px;
+}
+.contactUs .title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+.contactUs .title h2{
+  color: white;
+}
+
+.form{
+  grid-area: form;
+  /* background-color: white; */
+  border-radius: 10px;
+  padding: 10px;
+}
+.info{
+  grid-area: info;
+}
+.map{
+  grid-area: map;
+}
+.cantact{
+  padding: 40px;
+  /* background: white; */
+  /* box-shadow: 0 5px 35px rgba(0,0,0,0.5); */
+}
+.contactBox{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: 
+    "form info"
+    "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+    /* background: white; */
+}
+
+.contact h3{
+  color: white;
+  font-weight: 500;
+}
+
+/*Form*/
+.formBox{
+  position: relative;
+  width: 100%;
+}
+.formBox .row50{
+  display: flex;
+  gap: 20px;
+}
+.inputBox{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.formBox .row100 .inputBox{
+  width: 100%;
+}
+
+.inputBox span{
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+ 
+
+}
+
+.inputBox input{
+  padding: 10px;
+  font-size: 1.1em;
+  outline:none;
+  border: 1px solid #333;
+  border-radius: 10px;
+}
+.inputBox textarea{
+  padding: 10px;
+  font-size: 1.1em;
+  outline:none;
+  border: 1px solid #333;
+  border-radius: 10px;
+  resize: none;
+  min-height: 150px;
+  margin-bottom: 10px;
+}
+
+.inputBox input[type="submit"]{
+  color: black;
+  background:white;
+  border: none;
+  font-size: 1.1em;
+  max-width: 120px;
+  font-weight: 500;
+  cursor:pointer;
+  padding: 10px 10px;
+}
+
+/*Info*/
+.info{
+  background:#0e3959;
+  padding: 15px;
+  border-radius: 10px;
+}
+.info h3{
+  color: white;
+}
+
+.info .infoBox div{
+  display: flex;
+  align-items: center;
+  margin-bottom:10px ;
+}
+
+.info .infoBox div span{
+  min-width: 40px;
+  height: 40px;
+  color: white;
+  background-color: #18b7ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.info .infoBox div p{
+  color: white;
+  margin: 0;
+  font-size: 1.1em;
+}
+.info .infoBox div a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.sci{
+  margin-top: 40px;
+  display: flex;
+}
+
+.sci li{
+  list-style: none;
+  margin-right: 15px;
+}
+
+.sci li a{
+  color: rgb(235, 235, 235);
+  font-size: 2em;
+}
+.sci li a:hover{
+  color: white;
+}
+
+.map{
+  padding: 0;
+}
+.map iframe{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Responsive*/
+@media (max-width:991px){
+  .contactUs{
+    padding: 20px;
+  }
+  .contactBox{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:"form"
+                        " info"
+                        " map";
+    grid-gap: 20px;
+    margin-top: 20px;
+    /* background: white; */
+}
+
+  .map{
+    min-height: 300px;
+    padding: 0;
+  }
+  .formBox .row50 {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+}
+.inputBox{
+  width: 100%;
+}
+.contact{
+  padding: 30px;
+}
+}
+/* --------------------------------------------- Contact Us{END} ---------------------------------------- */
 
