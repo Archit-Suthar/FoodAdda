@@ -328,73 +328,36 @@ margin-top:16px;
 }
 
 /* --------------------------------------------- footer ---------------------------------------- */
-.footer {
-  padding: 20px 40px;
-  position: sticky;
-  background: rgba(0, 0, 0, 0.4);
-  color: #fff;
-  font-size: 18px Consolas;
-  justify-content: space-between;
+.page-footer{
+  background-color: rgba(0, 0, 0, 0.3);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+}
+.flink{
+  text-decoration: none !important;
 }
 .fLogo{
   margin: 25px 100px;
+ 
 }
 .Social{
   display: flex;
   width: 300px;
+  font-size: 17px;
 }
 .Social img{
-  width: 70px;
+width: 70px;
 }
 .Social a{
-  margin: auto;
+margin: auto;
 }
 .Social a:hover{
-  text-decoration: none;
+text-decoration: none;
 }
-.fpart1{
-  display: inline-block;
-  margin: 0px 40px;
-}
-.fpart2{
-  display: inline-block;
-}
-.ForYou ul{
-  margin: 12px 0px;
-}
-.ForYou li{
-  list-style: none;
-  padding: 8px 0px;
-  font-size: 18px
-}
-.ForYou li a:hover{
-  text-decoration: none;
-}
-.ForFoodies ul{
-  margin: 12px 0px;
-}
-.ForFoodies li{
-  list-style: none;
-  padding: 8px 0px;
-  font-size: 18px
-}
-.ForFoodies li a:hover{
-  text-decoration: none;
-}
-.fpart3{
-  display: inline-block;
-  margin: 0px 40px;
-}
-.fContactInfo ul{
-  margin: 12px 0px;
-}
-.fContactInfo li{
-  list-style: none;
-  padding: 8px 0px;
-  font-size: 20px;
-}
-
+ 
 /* --------------------------------------------- footer{END} ---------------------------------------- */
+
+
 /* --------------------------------------------- Contact Us{Start} ---------------------------------------- */
 
 
