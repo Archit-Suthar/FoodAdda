@@ -26,7 +26,7 @@
       max-width: 70%;
     }
 
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+    /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap'); */
 
 *{
     padding: 0;
@@ -39,17 +39,7 @@ body{
 .about-wrapper{
     height: 100vh;
 }
-/* .about-left::before{
-  background: url('../Images/signup.jpg') no-repeat center center/cover;
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 50%;
-            width: 50%;
-            z-index: -1;
-            opacity: 0.7;
-} */
+
 .about-left{
     background:transparent;
     display: flex;
@@ -163,7 +153,7 @@ body{
     text-transform: uppercase;
 }
 .about-right h1 span{
-    color: #dd2d4a;
+    color: #ffc107;
 }
 .about-right h2{
   color: white;
@@ -187,23 +177,25 @@ body{
     cursor: pointer;
 }
 .btn.btn-pink{
-    background: #dd2d4a;
-    color: #fff;
-    border-color: #dd2d4a;
+    background: #ffc107;
+    color: #212529;
+    border-color: #ffc107;
     transition: all 0.5s ease-in-out;
-}
-.btn.btn-pink:hover{
+  }
+  .btn.btn-pink:hover{
     background: transparent;
-    border-color: white;
+    border-color: #ffc107;
     color: white;
-}
-.btn.btn-white{
-  color: white;
+  }
+  .btn.btn-white{
+    background: #ffc107;
+    color: #212529;
+    border-color: #ffc107;
     transition: all 0.5s ease-in-out;
 }
 .btn.btn-white:hover{
-    background: #dd2d4a;
-    border-color: #dd2d4a;
+    background: transparent;
+    border-color: #ffc107;
     color: #fff;
 }
 .about-para p{
@@ -407,7 +399,7 @@ body{
         <div>
           <div class = "shadow">
             <div class = "about-img">
-              <img src = "/Images/fa1.png" alt = "about image">
+              <img src = "../Images/fa1.png" alt = "about image">
             </div>
           </div>
 
