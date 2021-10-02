@@ -167,7 +167,7 @@ body{
     border: none;
     font-size: 0.9rem;
     text-transform: uppercase;
-    border: 2px solid white;
+    border: 2px solid #ffc107;
     border-radius: 20px;
     padding: 0.55rem 0;
     width: 130px;
@@ -175,6 +175,10 @@ body{
     background: transparent;
     margin: 0 0.5rem;
     cursor: pointer;
+}
+.btn a{
+  text-decoration: none;
+  color: #212121;
 }
 .btn.btn-pink{
     background: #ffc107;
@@ -185,6 +189,10 @@ body{
   .btn.btn-pink:hover{
     background: transparent;
     border-color: #ffc107;
+    color: white;
+  }
+  .btn.btn-pink a:hover{
+    
     color: white;
   }
   .btn.btn-white{
@@ -198,6 +206,10 @@ body{
     border-color: #ffc107;
     color: #fff;
 }
+.btn.btn-white a:hover{
+    
+    color: white;
+  }
 .about-para p{
   color: white;
     font-weight: 300;
@@ -420,8 +432,8 @@ body{
       <h1 id="hi">hi<span>!</span></h1>
       <h2>Here's who we are & why people choose us</h2>
       <div class = "about-btns">
-        <button type = "button" class = "btn btn-pink">Order Now </button>
-        <button type = "button" class = "btn btn-white">Contact us</button>
+        <button type = "button" class = "btn btn-pink"><a href="Order.html">Order Now</a> </button>
+        <button type = "button" class = "btn btn-white"><a href="ContactUs.html">Contact us</a> </button>
       </div>
 
       <div class = "about-para">
@@ -435,7 +447,7 @@ body{
   
 
   <!------------------------------- just a space maker  -------------------------------------->
-  <div class="container" style="height:1000px">
+  <div class="container" style="height:100px">
   </div>
 
 
