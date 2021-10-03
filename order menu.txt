@@ -1,0 +1,11 @@
+-Lunch iteams ---- Price
+
+1) Poha with Sev - 99
+2) Chole Bhature Paneer Wale (2pcs) - 149
+3) Idly Sambhar - 110
+4) Masala Dosa - 120
+5) Appam With Side Dish - 124
+6) Samosa Matar Chaat - 159
+7) Coffe with Garlic Bread - 149
+8) Corn Cheese Sandwich - 199
+9) Chipotle Paneer Sandwich - 175
