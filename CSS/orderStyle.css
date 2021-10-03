@@ -5,3 +5,35 @@
 #foodCard{
     margin: 13px;
 }
+.cards{
+    margin-bottom: 60px;
+}
+.starter{
+    padding: 15px;
+}
+.StarterImage {
+    position: relative; 
+    height: 350px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.StarterImage::before {    
+    content: "";
+    background: url('../Images/Order Items/Starter_banner.jpg') no-repeat center center/cover;
+    /* background-size: cover; */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.65;
+}
+h1 {
+    position: relative;
+    color: #ffffff;  
+    font-size: 4rem !important;
+    line-height: 0.9;
+    text-align: center;
+  }
