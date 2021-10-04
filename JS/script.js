@@ -1,7 +1,7 @@
  var total = 0;
-
+ var str = "";
 function clickHandler(elem){
-  
+   // elem.preventDefault();
    // console.log(elem.parentNode.id);
    let parentId = elem.parentNode.id;
    // console.log($('parentId').children('.card-text.price').text());
@@ -10,5 +10,6 @@ function clickHandler(elem){
    total = total + price;
    console.log(total);
    document.getElementById('amount').innerHTML = total;
-  
+   // document.getElementById('modal-body').innerHTML = $('#card-title'),$('#price')
+   
 }
