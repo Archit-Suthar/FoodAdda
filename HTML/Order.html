@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <style>
     /**************MODAL {SIGN UP}**************/
     .signup_dialog {
@@ -248,38 +249,38 @@
   </div>
   <!-- just for testing backend not final one -->
   <div class="card-group container">
-    <div class="card">
+    <div id="pauhe" class="card">
       <img src="../Images/Order Items/L1.jpeg" class="card-img-top" alt="..." >
       <div class="card-body">
         <h5 class="card-title">pauhe</h5>
-        <p class="card-text">Price: <span class="price">₹20</span></p>
-      </div>
-      <a href="#" class="btn btn-warning">Add to Order</a>
+        
+      </div><span class="price" >20</span>
+      <a href="#" onclick="clickHandler(this)"  class="btn btn-warning">Add to Order</a>
     </div>
-    <div class="card">
+    <div id="chhole" class="card" >
       <img src="../Images/Order Items/L2.jpeg" class="card-img-top" alt="...">
-      <div class="card-body">
+      <div id="chhole" class="card-body">
         <h5 class="card-title">chole bhature</h5>
         <p class="card-text">Price:<span class="price">₹80</span></p>
       </div>
-      <a href="#" class="btn btn-warning">Add to Order</a>
+      <a href="#"  onclick="clickHandler(this)"  class="btn btn-warning">Add to Order</a>
     </div>
-    <div class="card">
+    <div id="idali" class="card">
       <img src="../Images/Order Items/L3.jpeg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">idali sambar</h5>
         <p class="card-text">Price:<span class="price">₹80</span></p>
       </div>
-      <a href="#" class="btn btn-warning">Add to Order</a>
+      <a href="#"  onclick="clickHandler(this)"  class="btn btn-warning">Add to Order</a>
     </div>
     
-    <div class="card">
+    <div id="dosa" class="card">
       <img src="../Images/Order Items/L4.jpeg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">mashala dhosa</h5>
         <p class="card-text">Price:<span class="price">₹100</span></p>
       </div>
-      <a href="#" class="btn btn-warning">Add to Order</a>
+      <a href="#" onclick="clickHandler(this)" class="btn btn-warning">Add to Order</a>
     </div> 
   </div>
 
@@ -292,12 +293,17 @@
 
 
 
-
-
-
-
   <!-- --------------------------------------------------------------------------------------- -->
   <!-- script -->
+  <!-- <script>
+    document.getElementById('addToOrder').onclick = function(e){
+   alert(e.target.parentNode.id);
+}
+  </script> -->
+  
+  <script src="../JS/script.js"></script>
+
+
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
