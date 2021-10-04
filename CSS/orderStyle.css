@@ -195,7 +195,7 @@ h1 {
 .cart-header {
     font-weight: bold;
     font-size: 1.25em;
-    color: #333;
+    color: white
 }
 
 .cart-column {
@@ -218,7 +218,7 @@ h1 {
 .cart-price {
     width: 20%;
     font-size: 1.2em;
-    color: #333;
+    color: white;
 }
 
 .cart-quantity {
@@ -226,7 +226,7 @@ h1 {
 }
 
 .cart-item-title {
-    color: #333;
+    color: white;
     margin-left: .5em;
     font-size: 1.2em;
 }
@@ -279,12 +279,12 @@ h1 {
 .cart-total-title {
     font-weight: bold;
     font-size: 1.5em;
-    color: black;
+    color: white;
     margin-right: 20px;
 }
 
 .cart-total-price {
-    color: #333;
+    color: white;
     font-size: 1.1em;
 }
 
