@@ -13,7 +13,7 @@ function ready() {
    }
 
 
-   var quantityInputs = document.getElementsByClassName('card-quantity-input')
+   var quantityInputs = document.getElementsByClassName('cart-quantity-input')
    for(var i=0; i < quantityInputs.length;i++){
       var input = quantityInputs[i]
       input.addEventListener('change',quantityChanged)
@@ -44,12 +44,14 @@ function updateCartTotal() {
       // console.log(priceElement,quantityElement);
       var price = priceElement.innerText.replace('₹', '')
       var quantity = quantityElement.value
-      total = total + price * quantity;
+      total = total + (price * quantity);
    }
    document.getElementsByClassName('cart-total-price')[0].innerText = total;
 
 }
 
+
+/******************Review carousel******************/
 $(document).ready(function () {
    $("#testimonial-slider").owlCarousel({
       items: 3,
