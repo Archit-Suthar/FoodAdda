@@ -226,9 +226,11 @@
   orderConfirmed.addEventListener('click',function(){
 	  //  var orderConfirm = document.getElementsByClassName('orderConfirm')[0].innerHTML;
 	  // console.log(actionBtn);
-	  var actionBtn = document.getElementsByClassName('cd-cart__actions')[0];
+	  var actionBtn = document.getElementsByClassName('cd-cart__actions');
+	  for(let i=0;i<actionBtn.length;i++){
+			actionBtn[i].style.display = "none";
+	  }
 	// actionBtn.remove();
-	actionBtn.style.display = "none";
 	var orderConfirm = document.getElementsByClassName('cd-cart__body')[0].innerHTML;
 	 
 	 var orderModalBody = document.getElementById('orderModalBody');
@@ -240,10 +242,11 @@
   var closeBtn = document.getElementById('actionEnable');
   closeBtn.addEventListener('click',
   function actionEnable(){
-	var actionBtn = document.getElementsByClassName('cd-cart__actions')[0];
-	console.log(actionBtn);
-	// actionBtn.remove();
-	actionBtn.style.display = "flex";
+	var actionBtn = document.getElementsByClassName('cd-cart__actions');
+	  for(let i=0;i<actionBtn.length;i++){
+			actionBtn[i].style.display = "flex";
+	  }
+	
   });
 })();
 
