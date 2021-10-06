@@ -222,12 +222,13 @@
 		};
   }
   var orderConfirmed = document.getElementsByClassName('cd-cart__checkout')[0];
-
+  
   orderConfirmed.addEventListener('click',function(){
-	//  var orderConfirm = document.getElementsByClassName('orderConfirm')[0].innerHTML;
-	 var actionBtn = document.getElementsByClassName('cd-cart__actions')[0];
-	console.log(actionBtn);
-	actionBtn.remove();
+	  //  var orderConfirm = document.getElementsByClassName('orderConfirm')[0].innerHTML;
+	  // console.log(actionBtn);
+	  var actionBtn = document.getElementsByClassName('cd-cart__actions')[0];
+	// actionBtn.remove();
+	actionBtn.style.display = "none";
 	var orderConfirm = document.getElementsByClassName('cd-cart__body')[0].innerHTML;
 	 
 	 var orderModalBody = document.getElementById('orderModalBody');
@@ -236,5 +237,13 @@
 	orderModalBody.innerHTML = orderConfirm;
 	
   })
+  var closeBtn = document.getElementById('actionEnable');
+  closeBtn.addEventListener('click',
+  function actionEnable(){
+	var actionBtn = document.getElementsByClassName('cd-cart__actions')[0];
+	console.log(actionBtn);
+	// actionBtn.remove();
+	actionBtn.style.display = "flex";
+  });
 })();
 
