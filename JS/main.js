@@ -232,11 +232,12 @@
 	  }
 	// actionBtn.remove();
 	var orderConfirm = document.getElementsByClassName('cd-cart__body')[0].innerHTML;
-	 
+	var total = document.getElementsByClassName('cd-cart__footer')[0];
+	var totalAmount = total.getElementsByTagName('span')[0].innerText;
 	 var orderModalBody = document.getElementById('orderModalBody');
 	// orderModalBody.innerHTML = orderConfirm.children;
 	
-	orderModalBody.innerHTML = orderConfirm;
+	orderModalBody.innerHTML = orderConfirm + `<b style="float: right;">Total Amount: ${totalAmount}</b>`;
 	
   })
   var closeBtn = document.getElementById('actionEnable');
@@ -251,11 +252,14 @@
   var apply = document.getElementById('promo');
   apply.addEventListener('click',
   function promoCodeChecker(){
+	var total = document.getElementsByClassName('cd-cart__footer')[0];
+	var totalAmount = total.getElementsByTagName('span')[0].innerText;
+	var orderConfirm = document.getElementsByClassName('cd-cart__body')[0].innerHTML;
 	 var code =  document.getElementById("promoCode").value
-	if(code == 'GET75OFF'){
-		console.log("valid")
-	}else{
-		console.log("invalid")
+	if(code == 'GET75OFF' && totalAmount>299){
+		orderModalBody.innerHTML = orderConfirm + `<b style="float: right;">Total Amount: ${totalAmount-75}</b>`;
+	}else if(code != 'GET75OFF' || totalAmount<299 ){
+		orderModalBody.innerHTML = orderConfirm + `<p style="float: right;"><b>Total Amount: ${totalAmount}</b></p><p style="color:red"><b> *Promocode not Applicable</b></p>`;
 	}
   } )
 })();
