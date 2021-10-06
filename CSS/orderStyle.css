@@ -144,10 +144,15 @@
     align-items: center;
     padding: 5px;
 }
+.shop-item-details a{
+   color: #333;
+}
+
 
 .shop-item-price {
     flex-grow: 1;
     color: white;
+    font-size: 25px;
 }
 
 .shop-items {
@@ -260,8 +265,7 @@
 
 .rupee{
     color: white;
+    font-size: 25px;
 }
-
-
 
 
