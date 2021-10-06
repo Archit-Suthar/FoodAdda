@@ -104,7 +104,8 @@
 							</div>
 					</div></div></li>`;
 			cartList.insertAdjacentHTML('beforeend', productAdded);
-			
+			// var modal = document.getElementById('orderModalBody');
+			// modal = productAdded;
 			// addProduct(this);
 			//update number of items 
 			updateCartCount(cartIsEmpty);
@@ -220,4 +221,16 @@
 			cartCountItems[1].innerText = quantity+1;
 		};
   }
+  var orderConfirmed = document.getElementsByClassName('cd-cart__checkout')[0];
+
+  orderConfirmed.addEventListener('click',function(){
+	//  var orderConfirm = document.getElementsByClassName('orderConfirm')[0].innerHTML;
+	 var orderConfirm = document.getElementsByClassName('cd-cart__body')[0].innerHTML;
+	 var orderModalBody = document.getElementById('orderModalBody');
+	// orderModalBody.innerHTML = orderConfirm.children;
+	orderModalBody.innerHTML = orderConfirm;
+	console.log(orderConfirm)
+
+  })
 })();
+
