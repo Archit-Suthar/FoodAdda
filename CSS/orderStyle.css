@@ -267,7 +267,7 @@
     color: white;
     font-size: 25px;
 }
- .shop-item a:hover{
+ .shop-item-details a:hover{
     text-decoration: none;
     color: black;
  }
