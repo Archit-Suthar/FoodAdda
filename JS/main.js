@@ -225,12 +225,16 @@
 
   orderConfirmed.addEventListener('click',function(){
 	//  var orderConfirm = document.getElementsByClassName('orderConfirm')[0].innerHTML;
-	 var orderConfirm = document.getElementsByClassName('cd-cart__body')[0].innerHTML;
+	 var actionBtn = document.getElementsByClassName('cd-cart__actions')[0];
+	console.log(actionBtn);
+	actionBtn.remove();
+	var orderConfirm = document.getElementsByClassName('cd-cart__body')[0].innerHTML;
+	 
 	 var orderModalBody = document.getElementById('orderModalBody');
 	// orderModalBody.innerHTML = orderConfirm.children;
+	
 	orderModalBody.innerHTML = orderConfirm;
-	console.log(orderConfirm)
-
+	
   })
 })();
 
