@@ -11,42 +11,6 @@
 .starter{
     padding: 15px;
 }
-.StarterImage {
-    position: relative; 
-    height: 350px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.StarterImage::before {    
-    content: "";
-    background: url('../Images/Order Items/Starter_banner.jpg') no-repeat center center/cover;
-    /* background-size: cover; */
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.65;
-}
-h1 {
-    position: relative;
-    color: #ffffff;  
-    font-size: 4rem !important;
-    line-height: 0.9;
-    text-align: center;
-  }
-
-  @media screen and (max-width:755px){
-    .StarterImage::before {    
-        background: url('../Images/Order Items/starter_mobile.jpeg') no-repeat center center/cover;
-        /* background-size: cover; */
-       
-    }
-  }
-
-
   .card{
       margin: 20px;
   }
@@ -180,10 +144,15 @@ h1 {
     align-items: center;
     padding: 5px;
 }
+.shop-item-details a{
+   color: #333;
+}
+
 
 .shop-item-price {
     flex-grow: 1;
     color: white;
+    font-size: 25px;
 }
 
 .shop-items {
@@ -293,3 +262,10 @@ h1 {
     margin: 40px auto 80px auto;
     font-size: 1.75em;
 }
+
+.rupee{
+    color: white;
+    font-size: 25px;
+}
+
+
