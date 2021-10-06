@@ -248,5 +248,15 @@
 	  }
 	
   });
+  var apply = document.getElementById('promo');
+  apply.addEventListener('click',
+  function promoCodeChecker(){
+	 var code =  document.getElementById("promoCode").value
+	if(code == 'GET75OFF'){
+		console.log("valid")
+	}else{
+		console.log("invalid")
+	}
+  } )
 })();
 
