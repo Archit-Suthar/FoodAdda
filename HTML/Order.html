@@ -15,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <style>
     /**************MODAL {SIGN UP}**************/
     .signup_dialog {
@@ -591,7 +592,7 @@
         <div class="modal-footer">
           <input type="text" class="form-control" id="promoCode" aria-describedby="emailHelp" placeholder="Promo Code">
           <button type="button" id="promo" class="btn btn-secondary">Apply</button>
-          <button type="submit" id="comfirmed" class="btn btn-primary">Confirm</button>
+          <button type="submit" id="comfirmed" class="btn btn-primary" onclick="sendEmail()">Confirm</button>
         </div>
       </div>
     </div>

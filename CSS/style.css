@@ -280,7 +280,9 @@ margin-top:16px;
 }
 .flink{
   text-decoration: none !important;
+  color:#d39e00;
 }
+
 .fLogo{
   margin: 25px 100px;
  
@@ -300,7 +302,7 @@ margin: auto;
 text-decoration: none;
 }
 #fc4 p{
-  color: #4f5f62;;
+  color:#d39e00;
 }
  
 /* --------------------------------------------- footer{END} ---------------------------------------- */

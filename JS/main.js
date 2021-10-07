@@ -267,5 +267,21 @@
 //   confirmed.addEventListener('click',function finalOrderPlaced(){
 // 	console.log("Ok!!")
 //   })
+function sendEmail(){
+	Email.send({
+Host : "smtp.gmail.com",
+Username : "foodaddarestaurant@gmail.com",
+Password : "food@bwpAdda",
+To : 'kevalm221@gmail.com',
+From : "foodaddarestaurant@gmail.com",
+Subject : "This is the subject",
+Body : "And this is the body"
+}).then(
+	console.log("send")
+);
+}
+var confirmed = document.getElementById('comfirmed')
+confirmed.addEventListener('click',sendEmail)
+
 })();
 
