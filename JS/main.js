@@ -257,7 +257,7 @@
 	var orderConfirm = document.getElementsByClassName('cd-cart__body')[0].innerHTML;
 	 var code =  document.getElementById("promoCode").value
 	if(code == 'GET75OFF' && totalAmount>299){
-		orderModalBody.innerHTML = orderConfirm + `<b style="float: right;">Total Amount: ${totalAmount-75}</b>`;
+		orderModalBody.innerHTML = orderConfirm + `<b style="float: right;">Total Amount: ₹${totalAmount-75}</b>`;
 	}else if(code != 'GET75OFF' || totalAmount<299 ){
 		orderModalBody.innerHTML = orderConfirm + `<p style="float: right;"><b>Total Amount: ${totalAmount}</b></p><p style="color:red"><b> *Promocode not Applicable</b></p>`;
 	}
