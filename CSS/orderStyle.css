@@ -267,5 +267,12 @@
     color: white;
     font-size: 25px;
 }
+ .shop-item-details a:hover{
+    text-decoration: none;
+    color: black;
+ }
 
-
+ .card img{
+    width: 100%;
+    height: 200px;
+ }

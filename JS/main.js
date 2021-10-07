@@ -104,7 +104,8 @@
 							</div>
 					</div></div></li>`;
 			cartList.insertAdjacentHTML('beforeend', productAdded);
-			
+			// var modal = document.getElementById('orderModalBody');
+			// modal = productAdded;
 			// addProduct(this);
 			//update number of items 
 			updateCartCount(cartIsEmpty);
@@ -220,4 +221,51 @@
 			cartCountItems[1].innerText = quantity+1;
 		};
   }
+  var orderConfirmed = document.getElementsByClassName('cd-cart__checkout')[0];
+  
+  orderConfirmed.addEventListener('click',function(){
+	  //  var orderConfirm = document.getElementsByClassName('orderConfirm')[0].innerHTML;
+	  // console.log(actionBtn);
+	  var actionBtn = document.getElementsByClassName('cd-cart__actions');
+	  for(let i=0;i<actionBtn.length;i++){
+			actionBtn[i].style.display = "none";
+	  }
+	// actionBtn.remove();
+	var orderConfirm = document.getElementsByClassName('cd-cart__body')[0].innerHTML;
+	var total = document.getElementsByClassName('cd-cart__footer')[0];
+	var totalAmount = total.getElementsByTagName('span')[0].innerText;
+	 var orderModalBody = document.getElementById('orderModalBody');
+	// orderModalBody.innerHTML = orderConfirm.children;
+	
+	orderModalBody.innerHTML = orderConfirm + `<b style="float: right;">Total Amount: ₹${totalAmount}</b>`;
+	
+  })
+  var closeBtn = document.getElementById('actionEnable');
+  closeBtn.addEventListener('click',
+  function actionEnable(){
+	var actionBtn = document.getElementsByClassName('cd-cart__actions');
+	  for(let i=0;i<actionBtn.length;i++){
+			actionBtn[i].style.display = "flex";
+	  }
+	
+  });
+  var apply = document.getElementById('promo');
+  apply.addEventListener('click',
+  function promoCodeChecker(){
+	var total = document.getElementsByClassName('cd-cart__footer')[0];
+	var totalAmount = total.getElementsByTagName('span')[0].innerText;
+	var orderConfirm = document.getElementsByClassName('cd-cart__body')[0].innerHTML;
+	 var code =  document.getElementById("promoCode").value
+	if(code == 'GET75OFF' && totalAmount>299){
+		orderModalBody.innerHTML = orderConfirm + `<b style="color:green;"> *Promocode Applied Successfully</b><b style="float: right;">Total Amount: ₹${totalAmount-75}</b>`;
+	}else if(code != 'GET75OFF' || totalAmount<299 ){
+		orderModalBody.innerHTML = orderConfirm + `<p style="float: right;"><b>Total Amount: ₹${totalAmount}</b></p><p style="color:red"><b> *Promocode not Applicable</b></p>`;
+	}
+  } )
+
+//   var confirmed = document.getElementById('comfirmed');
+//   confirmed.addEventListener('click',function finalOrderPlaced(){
+// 	console.log("Ok!!")
+//   })
 })();
+
