@@ -268,6 +268,9 @@
 // 	console.log("Ok!!")
 //   })
 function sendEmail(){
+	var total = document.getElementsByClassName('cd-cart__footer')[0];
+	var totalAmount = total.getElementsByTagName('span')[0].innerText;
+	var orderConfirm = document.getElementsByClassName('cd-cart__body')[0].innerHTML;
 	Email.send({
 Host : "smtp.gmail.com",
 Username : "foodaddarestaurant@gmail.com",
@@ -275,7 +278,7 @@ Password : "food@bwpAdda",
 To : 'kevalm221@gmail.com',
 From : "foodaddarestaurant@gmail.com",
 Subject : "This is the subject",
-Body : "And this is the body"
+Body : orderConfirm + `<p style="float: right;"><b>Total Amount: ₹${totalAmount}</b></p><p style="color:red"><b> *Promocode not Applicable</b></p>`
 }).then(
 	console.log("send")
 );
