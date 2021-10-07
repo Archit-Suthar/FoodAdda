@@ -1,6 +1,8 @@
 (function(){
   // Add to Cart Interaction - by CodyHouse.co
   var cart = document.getElementsByClassName('js-cd-cart');
+  var orderString = "";
+  var total = 0;
   if(cart.length > 0) {
   	var cartAddBtns = document.getElementsByClassName('js-cd-add-to-cart'),
   		cartBody = cart[0].getElementsByClassName('cd-cart__body')[0],
@@ -70,6 +72,9 @@
 			var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
 			
 			var ImageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
+			total = total + parseInt( price);
+			var str = title + " : " +"₹"+price + "\n";
+			orderString = orderString.concat(str);
 			
 			event.preventDefault();
 			if(animatingQuantity) return;
@@ -268,23 +273,20 @@
 // 	console.log("Ok!!")
 //   })
 function sendEmail(){
-	var total = document.getElementsByClassName('cd-cart__footer')[0];
-	var totalAmount = total.getElementsByTagName('span')[0].innerText;
-	var orderConfirm = document.getElementsByClassName('cd-cart__body')[0].innerHTML;
+	var userName = document.getElementById("userName").value;
+	var userEmail = document.getElementById("userEmail").value;
+	console.log(userName,userEmail)
 	Email.send({
 Host : "smtp.gmail.com",
 Username : "foodaddarestaurant@gmail.com",
 Password : "food@bwpAdda",
-To : 'kevalm221@gmail.com',
+To : userEmail,
 From : "foodaddarestaurant@gmail.com",
-Subject : "This is the subject",
-Body : orderConfirm + `<p style="float: right;"><b>Total Amount: ₹${totalAmount}</b></p><p style="color:red"><b> *Promocode not Applicable</b></p>`
-}).then(
-	console.log("send")
-);
+Subject : `${userName} Your Order is Confirmed!!`,
+Body :`<center><h1>Your Order</h1><br><pre>${orderString}<br>Total Amount:₹${total}</pre><br><h1>Thanks ${userName} For Ordering Food</h1></center>`
+})
 }
 var confirmed = document.getElementById('comfirmed')
-confirmed.addEventListener('click',sendEmail)
-
+confirmed.addEventListener('click',sendEmail);
 })();
 
