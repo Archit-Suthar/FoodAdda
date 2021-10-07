@@ -567,7 +567,7 @@
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" data-backdrop="static" data-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="staticBackdropLabel">Your Order</h5>
@@ -580,18 +580,18 @@
         </div>
         
         <div class="modal-footer">
-          <input type="text" class="form-control" id="userName" aria-describedby="emailHelp" placeholder="Your Name">
-          <input type="text" class="form-control" id="userMobileNo" aria-describedby="emailHelp" placeholder="Your Mobile No.">
+          <input type="text" class="form-control" id="userName" aria-describedby="emailHelp" placeholder="Your Name" required>
+          <input type="text" class="form-control" id="userMobileNo" aria-describedby="emailHelp" placeholder="Your Mobile No." required>
         </div>
         <div class="input-group mb-3 px-3 pt-1 pb-1">
           <input type="text" class="form-control" aria-describedby="inputGroup-sizing-sm"
-          placeholder="Your Address">
+          placeholder="Your Address" required>
         </div>
         
         <div class="modal-footer">
           <input type="text" class="form-control" id="promoCode" aria-describedby="emailHelp" placeholder="Promo Code">
           <button type="button" id="promo" class="btn btn-secondary">Apply</button>
-          <button type="submit" class="btn btn-primary">Confirm</button>
+          <button type="submit" id="comfirmed" class="btn btn-primary">Confirm</button>
         </div>
       </div>
     </div>
