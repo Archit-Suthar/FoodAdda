@@ -276,3 +276,13 @@
     width: 100%;
     height: 200px;
  }
+
+
+ .section-header{
+     background-image: linear-gradient(#ffc107, white);
+     color: black;
+     width: 50%;
+     display: block;
+     margin: 2px auto;
+     border-radius: 10px;
+ }
