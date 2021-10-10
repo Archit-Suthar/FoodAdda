@@ -287,10 +287,11 @@
 			Subject: `${userName} Your Order is Confirmed!!`,
 			Body: `<center><h1>Your Order</h1><br><pre>${orderString}<br>Total Amount:₹${total}</pre><br><h1>Thanks ${userName} For Ordering Food</h1></center>`
 		})
+
+		alert('Order Confirmed ! \nThank you for ordering food :)')
 	}
 	var confirmed = document.getElementById('comfirmed')
 	document.getElementById('userName').required = true;
 	confirmed.addEventListener('click', sendEmail);
-	document.getElementsByClassName('alert')[0].getElementsByTagName('div').addClass('show');
 })();
 
