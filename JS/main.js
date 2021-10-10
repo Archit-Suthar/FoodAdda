@@ -288,5 +288,6 @@ Body :`<center><h1>Your Order</h1><br><pre>${orderString}<br>Total Amount:₹${t
 }
 var confirmed = document.getElementById('comfirmed')
 confirmed.addEventListener('click',sendEmail);
+document.getElementById('userName').required = true;
 })();
 

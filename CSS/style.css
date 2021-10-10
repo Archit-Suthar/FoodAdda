@@ -195,14 +195,15 @@ margin-top:16px;
   }
   .box{
     display: inline-block;
-    margin: 8px;
+    margin: 10px;
   }
   .box:hover{
     filter: brightness(80%);
-
+    width: 330px;
+    height: 265px;
   }
   .box img{
-    width: 350px;
+    width: 325px;
     height: 260px;
   }
 
