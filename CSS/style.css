@@ -197,14 +197,16 @@ margin-top:16px;
     display: inline-block;
     margin: 10px;
   }
-  .box:hover{
-    filter: brightness(80%);
-    width: 330px;
-    height: 265px;
-  }
+
   .box img{
     width: 325px;
     height: 260px;
+  }
+  .box img:hover{
+    filter: brightness(80%);
+    margin: -10px;
+    width: 340px;
+    height: 275px;
   }
 
   /**************WELCOME CAROUSEL{START}**************/
