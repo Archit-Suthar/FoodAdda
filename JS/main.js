@@ -278,20 +278,28 @@
 		var userName = document.getElementById("userName").value;
 		var userEmail = document.getElementById("userEmail").value;
 		console.log(userName, userEmail)
-		Email.send({
-			Host: "smtp.gmail.com",
-			Username: "foodaddarestaurant@gmail.com",
-			Password: "food@bwpAdda",
-			To: userEmail,
-			From: "foodaddarestaurant@gmail.com",
-			Subject: `${userName} Your Order is Confirmed!!`,
-			Body: `<center><h1>Your Order</h1><br><pre>${orderString}<br>Total Amount:₹${total}</pre><br><h1>Thanks ${userName} For Ordering Food</h1></center>`
-		})
 
-		alert('Order Confirmed ! \nThank you for ordering food :)')
+		var userName = document.getElementById('userName');
+		var userEmail = document.getElementById('userEmail');
+		var userAddress = document.getElementById('userAddress');
+
+		if (userName.value.length == 0 || userEmail.value.length == 0 || userAddress.value.length == 0) {
+			;
+		}
+		else {
+			Email.send({
+				Host: "smtp.gmail.com",
+				Username: "foodaddarestaurant@gmail.com",
+				Password: "food@bwpAdda",
+				To: userEmail,
+				From: "foodaddarestaurant@gmail.com",
+				Subject: `${userName} Your Order is Confirmed!!`,
+				Body: `<center><h1>Your Order</h1><br><pre>${orderString}<br>Total Amount:₹${total}</pre><br><h1>Thanks ${userName} For Ordering Food</h1></center>`
+			})
+			alert('Order Confirmed ! \nThank you for ordering food :)')
+		}
 	}
 	var confirmed = document.getElementById('comfirmed')
-	document.getElementById('userName').required = true;
 	confirmed.addEventListener('click', sendEmail);
 })();
 
